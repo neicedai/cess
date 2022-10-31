@@ -2,7 +2,7 @@
 node:
   ## the mode of node: authority/storage/watcher
   mode: "storage"
-  externalIp: "144.76.176.154"
+  externalIp: "216.250.251.132"
   domainName: ""
   chainWsUrl: "ws://127.0.0.1:9944"
   profile: prod
@@ -24,7 +24,7 @@ bucket:
   space: 2800
   incomeAccount: "cXgnshN4wJnCQo8fSRJDzZJS4JuGBeGNzSegW38dz8eecT5Gf"
   signPhrase: "start soon twin armed crush prefer grant obscure kitchen person ordinary decide"
-  diskPath: "/test"
+  diskPath: "/cess"
 ## kaleido configurations
 kaleido:
   sgxDriver: ""
