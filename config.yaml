@@ -2,7 +2,7 @@
 node:
   ## the mode of node: authority/storage/watcher
   mode: "storage"
-  externalIp: "216.250.251.132"
+  externalIp: "162.55.82.102"
   domainName: ""
   chainWsUrl: "ws://127.0.0.1:9944"
   profile: prod
@@ -21,9 +21,9 @@ scheduler:
 ## bucket configurations
 bucket:
   port: 15001
-  space: 2800
+  space: 3200
   incomeAccount: "cXgnshN4wJnCQo8fSRJDzZJS4JuGBeGNzSegW38dz8eecT5Gf"
-  signPhrase: "start soon twin armed crush prefer grant obscure kitchen person ordinary decide"
+  signPhrase: "provide fortune buyer lake family general all salad iron caution detect harbor"
   diskPath: "/cess"
 ## kaleido configurations
 kaleido:
