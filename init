@@ -6,4 +6,4 @@ cd cess-nodeadm-0.1.2
 sudo ./install.sh
 cd /root/cess
 cp config.yaml /opt/cess/nodeadm
-cess start
+cess config set
