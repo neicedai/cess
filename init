@@ -1,3 +1,4 @@
+mkdir /cess
 cd /home
 wget https://github.com/CESSProject/cess-nodeadm/archive/v0.1.2.tar.gz
 tar -xvf v0.1.2.tar.gz
