@@ -1,5 +1,5 @@
 mkdir /cess
-mkdir /opt/cess/nodeadm
+mkdir -p /opt/cess/nodeadm
 cd /root/cess
 cp config.yaml /opt/cess/nodeadm
 cd /home
