@@ -1,7 +1,7 @@
-mkdir /cess
-mkdir -p /opt/cess/nodeadm
-cd /root/cess
-cp config.yaml /opt/cess/nodeadm
+mkdir -p /cess
+#mkdir -p /opt/cess/nodeadm
+#cd /root/cess
+#cp config.yaml /opt/cess/nodeadm
 cd /home
 wget https://github.com/CESSProject/cess-nodeadm/archive/v0.1.2.tar.gz
 tar -xvf v0.1.2.tar.gz
