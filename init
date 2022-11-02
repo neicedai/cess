@@ -1,9 +1,10 @@
 mkdir /cess
+mkdir /opt/cess/nodeadm
+cd /root/cess
+cp config.yaml /opt/cess/nodeadm
 cd /home
 wget https://github.com/CESSProject/cess-nodeadm/archive/v0.1.2.tar.gz
 tar -xvf v0.1.2.tar.gz
 cd cess-nodeadm-0.1.2
 sudo ./install.sh
-cd /root/cess
-cp config.yaml /opt/cess/nodeadm
 cess config set
