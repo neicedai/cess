@@ -8,8 +8,6 @@ cd cess-nodeadm-0.4.4/
 ./install.sh 
 cess profile testnet
 #cess config set
-#!/bin/bash
-
 # Set the configuration for the CESS storage node
 {
     echo "storage" # Sets the mode to storage
@@ -21,3 +19,5 @@ cess profile testnet
 } | cess config set
 
 echo "Configuration set successfully."
+cess start
+docker logs bucket
