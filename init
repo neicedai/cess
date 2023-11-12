@@ -6,5 +6,5 @@ cd /home
 wget https://github.com/CESSProject/cess-nodeadm/archive/v0.4.4.tar.gz
 tar -xvf v0.4.4.tar.gz
 cd cess-nodeadm-0.4.4/
-./install.sh
+./install.sh --skip-dep --retain-config
 cess config set
