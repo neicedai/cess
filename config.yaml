@@ -2,31 +2,31 @@
 node:
   ## the mode of node: authority/storage/watcher
   mode: "storage"
-  externalIp: "162.55.82.102"
+  externalIp: ""
   domainName: ""
   chainWsUrl: "ws://127.0.0.1:9944"
-  profile: prod
-  region: en
+  profile: testnet
+  backupChainWsUrls:
+    - wss://testnet-rpc0.cess.cloud/ws/
+    - wss://testnet-rpc1.cess.cloud/ws/
 ## chain configurations
 chain:
   ## the name of chain node
   name: "cess"
   ## the port of chain node
   port: 30336
-## scheduler configurations
-scheduler:
-  port: 15000
-  stashAccount: ""
-  controllerPhrase: ""
 ## bucket configurations
 bucket:
   port: 15001
-  space: 3200
+  space: 300
   incomeAccount: "cXgnshN4wJnCQo8fSRJDzZJS4JuGBeGNzSegW38dz8eecT5Gf"
-  signPhrase: "provide fortune buyer lake family general all salad iron caution detect harbor"
+  signPhrase: "simple vicious amazing monster nurse dance memory unknown piece fine aware flight"
   diskPath: "/cess"
+  bootAddr: _dnsaddr.boot-kldr-testnet.cess.cloud
 ## kaleido configurations
 kaleido:
-  sgxDriver: ""
-  sgxDevices: []
-  port: 8080
+  agentPort: 10010
+  kaleidoPort: 4001
+  bootPeerIds: ""
+  stashAccount: ""
+  controllerPhrase: ""
