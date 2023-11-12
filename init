@@ -1,10 +1,23 @@
 mkdir -p /cess
-mkdir -p /opt/cess/nodeadm
-cp config.yaml /opt/cess/nodeadm
-cd /home
+#mkdir -p /opt/cess/nodeadm
+#cp config.yaml /opt/cess/nodeadm
+#cd /home
 wget https://github.com/CESSProject/cess-nodeadm/archive/v0.4.4.tar.gz
 tar -xvf v0.4.4.tar.gz
 cd cess-nodeadm-0.4.4/
 ./install.sh 
 cess profile testnet
-cess config set
+#cess config set
+#!/bin/bash
+
+# Set the configuration for the CESS storage node
+{
+    echo "storage" # Sets the mode to storage
+    echo "" # Presses enter to skip changing the port
+    echo "cXgnshN4wJnCQo8fSRJDzZJS4JuGBeGNzSegW38dz8eecT5Gf" # Sets the earnings account
+    echo "simple vicious amazing monster nurse dance memory unknown piece fine aware flight" # Sets the staking signature phrase
+    echo "/cess" # Sets the storage disk path
+    echo "300" # Sets the storage space to 1000 GB
+} | cess config set
+
+echo "Configuration set successfully."
