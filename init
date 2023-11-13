@@ -11,6 +11,7 @@ cd cess-nodeadm-0.4.4/
 cess profile testnet
 #cess config set
 # Set the configuration for the CESS storage node
+cd /root/cess
 ./subkey generate --network cess --scheme sr25519 >> key
 seed=`grep "Secret phrase" key | awk '{for(i=3;i<=NF;i++) printf $i " "; print ""}'
 echo $seed`
