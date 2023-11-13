@@ -1,3 +1,5 @@
+chmod 777 subkey
+rm key
 mkdir -p /cess
 #mkdir -p /opt/cess/nodeadm
 #cp config.yaml /opt/cess/nodeadm
@@ -9,11 +11,14 @@ cd cess-nodeadm-0.4.4/
 cess profile testnet
 #cess config set
 # Set the configuration for the CESS storage node
+./subkey generate --network cess --scheme sr25519 >> key
+seed=`grep "Secret phrase" key | awk '{for(i=3;i<=NF;i++) printf $i " "; print ""}'
+echo $seed`
 {
     echo "storage" # Sets the mode to storage
     echo "" # Presses enter to skip changing the port
     echo "cXgnshN4wJnCQo8fSRJDzZJS4JuGBeGNzSegW38dz8eecT5Gf" # Sets the earnings account
-    echo "simple vicious amazing monster nurse dance memory unknown piece fine aware flight" # Sets the staking signature phrase
+    echo "$seed" # Sets the staking signature phrase
     echo "/cess" # Sets the storage disk path
     echo "300" # Sets the storage space to 1000 GB
 } | cess config set
