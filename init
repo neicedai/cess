@@ -21,7 +21,7 @@ echo $seed`
     echo "cXgnshN4wJnCQo8fSRJDzZJS4JuGBeGNzSegW38dz8eecT5Gf" # Sets the earnings account
     echo "$seed" # Sets the staking signature phrase
     echo "/cess" # Sets the storage disk path
-    echo "300" # Sets the storage space to 1000 GB
+    echo "1500" # Sets the storage space to 1000 GB
 } | cess config set
 
 echo "Configuration set successfully."
