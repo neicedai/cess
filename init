@@ -4,9 +4,9 @@ mkdir -p /cess
 #mkdir -p /opt/cess/nodeadm
 #cp config.yaml /opt/cess/nodeadm
 #cd /home
-wget https://github.com/CESSProject/cess-nodeadm/archive/v0.4.4.tar.gz
-tar -xvf v0.4.4.tar.gz
-cd cess-nodeadm-0.4.4/
+wget https://github.com/CESSProject/cess-nodeadm/archive/v0.5.1.tar.gz
+tar -xvf v0.5.1.tar.gz
+cd cess-nodeadm-0.5.1/
 ./install.sh 
 cess profile testnet
 #cess config set
