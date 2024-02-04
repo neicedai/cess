@@ -24,5 +24,6 @@ echo $seed`
     echo "" # Presses enter to skip 
 } | cess config set
 echo "Configuration set successfully."
-#cess start
-#docker logs bucket
+cess start
+docker logs bucket
+cat key
