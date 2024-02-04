@@ -20,7 +20,7 @@ echo $seed`
     echo "/cess" # Sets the storage disk path
     echo "$1" # Sets the storage space to 1000 GB
     echo "1" # Sets cpus
-    echo "cXfPzL2QbGXzV31jTWo929wbqhfKdJBuWisLn1S2K7PhAbFH1" # Sets the staking
+    echo "" # Sets the staking
     echo "" # Presses enter to skip 
 } | cess config set
 echo "Configuration set successfully."
