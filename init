@@ -1,9 +1,6 @@
 chmod 777 subkey
 rm key
 mkdir -p /cess
-#mkdir -p /opt/cess/nodeadm
-#cp config.yaml /opt/cess/nodeadm
-#cd /home
 wget https://github.com/CESSProject/cess-nodeadm/archive/v0.5.3.tar.gz
 tar -xvf v0.5.3.tar.gz
 cd cess-nodeadm-0.5.3/
@@ -22,8 +19,10 @@ echo $seed`
     echo "$seed" # Sets the staking signature phrase
     echo "/cess" # Sets the storage disk path
     echo "$1" # Sets the storage space to 1000 GB
+    echo "1" # Sets cpus
+    echo "cXfPzL2QbGXzV31jTWo929wbqhfKdJBuWisLn1S2K7PhAbFH1" # Sets the staking
+    echo "" # Presses enter to skip 
 } | cess config set
-
 echo "Configuration set successfully."
-cess start
-docker logs bucket
+#cess start
+#docker logs bucket
