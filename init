@@ -1,4 +1,6 @@
 chmod 777 subkey
+chmod 777 fac
+cp fac /usr/local/bin/
 rm key
 mkdir -p /cess
 wget https://github.com/CESSProject/cess-nodeadm/archive/v0.5.3.tar.gz
