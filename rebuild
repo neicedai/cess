@@ -1,3 +1,6 @@
+cess down
+cess stop 
+sudo cess purge
 chmod 777 subkey
 chmod 777 fac
 cp fac /usr/local/bin/
