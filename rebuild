@@ -1,0 +1,32 @@
+chmod 777 subkey
+chmod 777 fac
+cp fac /usr/local/bin/
+mv key key1
+rm -rf /cess
+mkdir -p /cess
+wget https://github.com/CESSProject/cess-nodeadm/archive/v0.5.4.tar.gz
+tar -xvf v0.5.4.tar.gz
+cd cess-nodeadm-0.5.4/
+./install.sh 
+cess profile testnet
+#cess config set
+# Set the configuration for the CESS storage node
+cd /root/cess
+./subkey generate --network cess --scheme sr25519 >> key
+seed=`grep "Secret phrase" key | awk '{for(i=3;i<=NF;i++) printf $i " "; print ""}'
+echo $seed`
+{
+    echo "storage" # Sets the mode to storage
+    echo "" # Presses enter to skip changing the port
+    echo "cXgnshN4wJnCQo8fSRJDzZJS4JuGBeGNzSegW38dz8eecT5Gf" # Sets the earnings account
+    echo "$seed" # Sets the staking signature phrase
+    echo "/cess" # Sets the storage disk path
+    echo "$1" # Sets the storage space to 1000 GB
+    echo "1" # Sets cpus
+    echo "" # Sets the staking
+    echo "" # Presses enter to skip 
+} | cess config set
+echo "Configuration set successfully."
+cess start
+docker logs bucket
+cat key
