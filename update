@@ -20,3 +20,4 @@ echo $seed`
 } | cess config set
 echo "Configuration set successfully."
 cess start
+cess bucket increase staking 2000
