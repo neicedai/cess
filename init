@@ -3,9 +3,9 @@ chmod 777 fac
 cp fac /usr/local/bin/
 rm key
 mkdir -p /cess
-wget https://github.com/CESSProject/cess-nodeadm/archive/v0.5.3.tar.gz
-tar -xvf v0.5.3.tar.gz
-cd cess-nodeadm-0.5.3/
+wget https://github.com/CESSProject/cess-nodeadm/archive/v0.5.4.tar.gz
+tar -xvf v0.5.4.tar.gz
+cd cess-nodeadm-0.5.4/
 ./install.sh 
 cess profile testnet
 #cess config set
