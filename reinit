@@ -6,11 +6,12 @@ echo $seed`
 {
     echo "storage" # Sets the mode to storage
     echo "" # Presses enter to skip changing the port
+    echo "" # Presses enter to skip ws-url
     echo "cXgnshN4wJnCQo8fSRJDzZJS4JuGBeGNzSegW38dz8eecT5Gf" # Sets the earnings account
     echo "$seed" # Sets the staking signature phrase
     echo "/cess" # Sets the storage disk path
     echo "$1" # Sets the storage space to 1000 GB
-    echo "1" # Sets cpus
+    echo "0" # Sets cpus
     echo "" # Sets the staking
     echo "" # Presses enter to skip 
 } | cess config set
