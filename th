@@ -1,1 +1,5 @@
 sed -i "/testnet-rpc1.cess.cloud\/ws/a\ \ - 'wss://testnet-rpc2.cess.cloud/ws/'\n\ \ - 'wss://testnet-rpc3.cess.cloud/ws/'" /opt/cess/storage/bucket/config.yaml
+cess down
+cess start
+sleep 10
+cess bucket stat
